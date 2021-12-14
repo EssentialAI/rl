@@ -1,6 +1,7 @@
-# Welcome to Reinforcement Learning - Naresh Kumar
+# Welcome to your Jupyter Book
 
-This is a test
+This is a small sample book to give you a feel for how book content is
+structured.
 
 :::{note}
 Here is a note!
