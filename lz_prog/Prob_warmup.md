@@ -8,7 +8,7 @@ We have two probability distributions $P(A,B)$ and $P(A|B)$. What do we call the
 :class: dropdown
 $P(A,B)$ (also denoted as $P(A,B)$ is called **Joint Probability**. Joint Probability is a statistical measure that calculates the likelihood of two events occuring together and at the same point in time.
 
-<img src="../images/p(a_and_b).png" align="center"/><br>
+<img src="../images/p(a_and_b).png" align="center"/>
 
 Joint probability is a measure of two events happening at the same time, and can only be applied to situations where more than one observation can occur at the same time. For example, from a deck of $52$ cards, the joint probability of picking up a card that is both red and $6$ is $P(6 ∩ red) = 2/52 = 1/26$, since a deck of cards has two red sixes—the six of hearts and the six of diamonds. Because the events "$6$" and "red" are independent in this example, you can also use the following formula to calculate the joint probability:
 
