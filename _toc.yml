@@ -1,0 +1,8 @@
+format: jb-book
+root: index
+chapters:
+- file: lz_prog/table_of_contents
+- file: lz_prog/notations
+- file: lz_prog/notations-Copy1
+  sections:
+  - file: lz_prog/Prob_warmup
