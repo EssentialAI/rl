@@ -127,7 +127,7 @@ B_{\pi} \enspace & \leftarrow \enspace \textrm{Bellaman operator for value funct
 \bar{VE}(\textbf{w}) \enspace & \leftarrow \enspace \textrm{mean square value error}\\
 \bar{BE}(\textbf{w}) \enspace & \leftarrow \enspace \textrm{mean square Bellman error}\\
 \bar{PBE}(\textbf{w}) \enspace & \leftarrow \enspace \textrm{mean square projected Bellman error}\\
-\bar{TDE}(\textbf{w}) \enspace & \leftarrow \enspace \textrm{mean square }\\
+\bar{TDE}(\textbf{w}) \enspace & \leftarrow \enspace \textrm{mean square Temporal difference error}\\
 \bar{RE}(\textbf{w}) \enspace & \leftarrow \enspace \textrm{mean square return error}
 \end{align}
 <!-- #endregion -->
