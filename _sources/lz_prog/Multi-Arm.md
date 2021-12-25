@@ -1,3 +1,0 @@
-# Multi-Arm Bandit Problem
-
-
