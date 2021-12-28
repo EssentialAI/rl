@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@1&display=swap');
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+
+.bital{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.blital{
+    font-family: 'Mulish', sans-serif;
+    color: blue;
+    font-style: italic;
+}
+
+.nital{
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+}
+
+.hital{
+    font-family: 'Mulish', sans-serif;
+    color: blue;
+    font-style: italic;
+}
+
+h1, h2, h3 {
+    font-size: 24px;
+    /* color: black; */
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    margin-top : 1px;
+    margin-bottom : 2px;
+    /* text-shadow: 2px 2px #83c5be; */
+     padding: 0;
+}
+
+.blue {
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    color: blue;
+}
