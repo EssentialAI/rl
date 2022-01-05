@@ -1,7 +1,0 @@
-format: jb-book
-root: index
-chapters:
-- file: lz_prog/table_of_contents
-- file: lz_prog/structure
-- file: lz_prog/Introduction
-- file: lz_prog/Prob_warmup
