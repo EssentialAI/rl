@@ -1,0 +1,9 @@
+format: jb-book
+root: index
+chapters:
+- file: table_of_contents
+- file: structure
+- file: Introduction
+- file: Prob_warmup
+- file: MAB_Intro
+- file: epsilon-greedy
