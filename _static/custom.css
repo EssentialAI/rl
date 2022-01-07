@@ -43,7 +43,7 @@ h1{
     /* text-shadow: 2px 2px #83c5be; */
 }
 
-h2, h3 {
+h2{
     font-size: 22px;
     /* color: black; */
     font-family: 'Raleway', sans-serif;
@@ -63,7 +63,7 @@ h2, h3 {
     font-size: 15px;
 }
 
-.h4 {
+h3 {
     font-size: 18px;
     color: blue;
     font-family: 'Raleway', sans-serif;

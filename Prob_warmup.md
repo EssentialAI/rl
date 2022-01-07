@@ -1,10 +1,10 @@
 # [0.2] Probability Review
 The language of this course is going to be probability. Everything we discuss in this course will be based on undergraduate level probability. Probability is the study of uncertainty. The mathematical theory of probability is very sophisticated, and delves into a branch of analysis known as measure theory. In these notes, we provide a basic treatment of probability that does not address these finer details.
 
-### [0.2.1] Elements of Probability
+## [0.2.1] Elements of Probability
 The basic setting for a probability model is the random experiment or random trial. This is your mental model of what is going on.<br>
 
-<span class = 'h4'>Sample Space $S$ :</span>
+### Sample Space $S$ :
 
 The set of all the outcomes of a random experiment. Here, each outcome $\omega \in S$ can be thought of as a complete description of the state of the real world at the end of the experiment.
 ```{admonition} Further reading 
@@ -25,7 +25,7 @@ Other examples:
 For this review of elementary probability we will restrict ourselves to finite and countably infinite sample spaces.
 ```
 
-<span class = 'h4'>Set of events (or event space) $\mathcal{F}:$</span>
+### Set of events (or event space) $\mathcal{F}:$
 
 A set whose elements, $A \in \mathcal{F}$ (called events) are subsets of $S$.
 
@@ -44,7 +44,7 @@ $E \cap F$ = "$E$ and $F$ = collection of outcomes in both $E$ and $F$
 <span class = 'blue'>Union</span>
 $E \cup F$ = "$E$ or $F$" = collection of outcomes in either $E$ or $F$ or both
 ```
-<span class = 'h4'>Probaility measure :</span>
+### Probaility measure :
 
 A function $P:\mathcal{F} \rightarrow \mathbb{R}$ that satisfies the following properties,
 

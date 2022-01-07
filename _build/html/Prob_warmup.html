@@ -43,7 +43,7 @@
     <script src="_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
@@ -82,7 +82,7 @@
         
       
       
-      <img src="_static/final_rl-removebg-preview.png" class="logo" alt="logo">
+      <img src="_static/logo.jpg" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Reinforcement Learning Notes</h1>
@@ -213,6 +213,30 @@
   <a class="reference internal nav-link" href="#elements-of-probability">
    [0.2.1] Elements of Probability
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sample-space-s">
+     Sample Space
+     <span class="math notranslate nohighlight">
+      \(S\)
+     </span>
+     :
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-of-events-or-event-space-mathcal-f">
+     Set of events (or event space)
+     <span class="math notranslate nohighlight">
+      \(\mathcal{F}:\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#probaility-measure">
+     Probaility measure :
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -231,7 +255,8 @@
 <div class="section" id="elements-of-probability">
 <h2>[0.2.1] Elements of Probability<a class="headerlink" href="#elements-of-probability" title="Permalink to this headline">¶</a></h2>
 <p>The basic setting for a probability model is the random experiment or random trial. This is your mental model of what is going on.<br></p>
-<p><span class = 'h4'>Sample Space <span class="math notranslate nohighlight">\(S\)</span> :</span></p>
+<div class="section" id="sample-space-s">
+<h3>Sample Space <span class="math notranslate nohighlight">\(S\)</span> :<a class="headerlink" href="#sample-space-s" title="Permalink to this headline">¶</a></h3>
 <p>The set of all the outcomes of a random experiment. Here, each outcome <span class="math notranslate nohighlight">\(\omega \in S\)</span> can be thought of as a complete description of the state of the real world at the end of the experiment.</p>
 <div class="dropdown tip admonition">
 <p class="admonition-title">Further reading </p>
@@ -244,7 +269,9 @@
 <p>(4) Throw a dart at a circular dartboard: <span class="math notranslate nohighlight">\(S = \{(x, y) \in \mathbb{R}^2 | x^2 + y^2 \leq 1\}\)</span></p>
 <p>For this review of elementary probability we will restrict ourselves to finite and countably infinite sample spaces.</p>
 </div>
-<p><span class = 'h4'>Set of events (or event space) <span class="math notranslate nohighlight">\(\mathcal{F}:\)</span></span></p>
+</div>
+<div class="section" id="set-of-events-or-event-space-mathcal-f">
+<h3>Set of events (or event space) <span class="math notranslate nohighlight">\(\mathcal{F}:\)</span><a class="headerlink" href="#set-of-events-or-event-space-mathcal-f" title="Permalink to this headline">¶</a></h3>
 <p>A set whose elements, <span class="math notranslate nohighlight">\(A \in \mathcal{F}\)</span> (called events) are subsets of <span class="math notranslate nohighlight">\(S\)</span>.</p>
 <p>An event is a collection of possible outcomes of a random experiment. Usually write <span class="math notranslate nohighlight">\(A, B, . . .\)</span> to denote events. So an event <span class="math notranslate nohighlight">\(A\)</span> is a subset of <span class="math notranslate nohighlight">\(S\)</span>, the sample space, that is <span class="math notranslate nohighlight">\(A ⊂ S\)</span>. Usually an event contains the set of outcomes which make the answer to a question ‘Yes’. Saying ‘the outcome is in <span class="math notranslate nohighlight">\(A\)</span>’ is the same as saying ‘the event A is true’. There are two special events: the whole sample space S is called the certain or the sure event. The empty set ∅ is the null event.</p>
 <div class="dropdown tip admonition">
@@ -257,7 +284,9 @@
 <p><span class = 'blue'>Union</span>
 <span class="math notranslate nohighlight">\(E \cup F\)</span> = “<span class="math notranslate nohighlight">\(E\)</span> or <span class="math notranslate nohighlight">\(F\)</span>” = collection of outcomes in either <span class="math notranslate nohighlight">\(E\)</span> or <span class="math notranslate nohighlight">\(F\)</span> or both</p>
 </div>
-<p><span class = 'h4'>Probaility measure :</span></p>
+</div>
+<div class="section" id="probaility-measure">
+<h3>Probaility measure :<a class="headerlink" href="#probaility-measure" title="Permalink to this headline">¶</a></h3>
 <p>A function <span class="math notranslate nohighlight">\(P:\mathcal{F} \rightarrow \mathbb{R}\)</span> that satisfies the following properties,</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(P(A) \geq 0, \enspace \text{for all} \enspace A \in \mathcal{F}\)</span></p></li>
@@ -320,6 +349,7 @@ The basic step is that every event <span class="math notranslate nohighlight">\(
 <p>Let <span class="math notranslate nohighlight">\(A\)</span> be the event that you get Heads on the coin toss, and let <span class="math notranslate nohighlight">\(B\)</span> be the event that you draw at least one Ace from the deck. Then <span class="math notranslate nohighlight">\(P(B|A)\)</span> is clearly <span class="math notranslate nohighlight">\(4/52 = 1/13\)</span>. What about <span class="math notranslate nohighlight">\(P(A \cap B)\)</span>? Imagine lining up all your many repeated experiments, then for approximately one-half of them the event <span class="math notranslate nohighlight">\(A\)</span> will be true.</p>
 <p>Out of these approximately, <span class="math notranslate nohighlight">\(1/13\)</span> will have <span class="math notranslate nohighlight">\(B\)</span> also true. So we expect <span class="math notranslate nohighlight">\(P(A \cap B) = (1/2)(1/13) = P(A) \cdot P(B|A)\)</span>. This line of reasoning leads to the result shown in the above equation.</p>
 <p>It is important to note that <span class="math notranslate nohighlight">\(P(B|A)\)</span> is defined only is <span class="math notranslate nohighlight">\(P(A) \neq 0\)</span></p>
+</div>
 </div>
 </div>
 </div>
