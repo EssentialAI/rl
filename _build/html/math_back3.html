@@ -83,7 +83,7 @@
         
       
       
-      <img src="_static/logo.jpg" class="logo" alt="logo">
+      <img src="_static/final_logo1.svg" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Reinforcement Learning Notes</h1>
@@ -376,6 +376,15 @@ f(x) &amp;= f(a)+f'(a)(x-a)+\frac{f''(a)}{2!}(x-a)^2+... \\
 \[\text{Second-Order: } f(x) = \underbrace{f(a)}_{\text{offset}}+\underbrace{f'(a)(x-a)}_{\text{slope}}+ \underbrace{\frac{f''(a)}{2!}(x-a)^2}_{\text{curvature}}+\mathcal{O}((x-a)^3)
 \]</div>
 <p>Here, the big-O notation <span class="math notranslate nohighlight">\(\mathcal{O}(\epsilon^k)\)</span> means any term that has an order at least power <span class="math notranslate nohighlight">\(k\)</span>. For small <span class="math notranslate nohighlight">\(\epsilon\)</span>, i.e., <span class="math notranslate nohighlight">\(\epsilon ≪ 1\)</span>, a high-order term <span class="math notranslate nohighlight">\(\mathcal{O}(\epsilon^k) \approx 0\)</span> for large <span class="math notranslate nohighlight">\(k\)</span>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Example</p>
+<p>Let <span class="math notranslate nohighlight">\(f(x) = sinx\)</span>. Then the Taylor approximation at <span class="math notranslate nohighlight">\(x=0\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align}
+f(x) &amp;\approx f(0)+f'(0)(x-0)+\frac{f''(0)}{2!}
+\end{align}\]</div>
+</div>
 </div>
 </div>
 

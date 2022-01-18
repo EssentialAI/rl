@@ -66,3 +66,13 @@ plt.show()
 # $$
 # 
 # Here, the big-O notation $\mathcal{O}(\epsilon^k)$ means any term that has an order at least power $k$. For small $\epsilon$, i.e., $\epsilon ≪ 1$, a high-order term $\mathcal{O}(\epsilon^k) \approx 0$ for large $k$.
+
+# ```{admonition} Example
+# :class: tip
+# Let $f(x) = sinx$. Then the Taylor approximation at $x=0$ is:
+# 
+# $$
+# \begin{align}
+# f(x) &\approx f(0)+f'(0)(x-0)+\frac{f''(0)}{2!}
+# \end{align}$$
+# ```
