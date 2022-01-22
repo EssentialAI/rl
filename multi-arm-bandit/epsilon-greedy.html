@@ -346,8 +346,8 @@
 <p>This small probability is denoted by <span class="math notranslate nohighlight">\(\epsilon\)</span> and its value is typically 5%, 10%</p>
 <p>The reason we explore is to collect more information about each bandit so that the probability estimates of each bandit can be closer to the their actual probability values.</p>
 <p>Let’s say we have two slots with probability of rewards 0.9 and 0.8 respectively, then by using epsilon-greedy approach our estimated reward becomes:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b2ddbba3-0db2-457e-8dcf-1ade0a16aafb">
-<span class="eqno">(1)<a class="headerlink" href="#equation-b2ddbba3-0db2-457e-8dcf-1ade0a16aafb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-08ef4883-7959-4a52-afd0-f1f122654e00">
+<span class="eqno">(1)<a class="headerlink" href="#equation-08ef4883-7959-4a52-afd0-f1f122654e00" title="Permalink to this equation">¶</a></span>\[\begin{equation}
     \mathbb{E}(R) = (1-\epsilon)0.9 + \epsilon(\frac{0.8+0.9}{2})
 \end{equation}\]</div>
 <p>One option to improve this behavior is to have a decaying epsilon over the time.</p>
