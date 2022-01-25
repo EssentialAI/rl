@@ -1,0 +1,13 @@
+format: jb-book
+root: index
+chapters:
+  - file: overview/table_of_contents
+  - file: overview/structure
+  - file: overview/status
+  - file: overview/Introduction
+  - file: math/math-intro
+  - file: probability/probability-intro
+  - file: multi-arm-bandit/mab-explained
+    sections:
+    - file: multi-arm-bandit/epsilon-greedy
+  
