@@ -1,4 +1,4 @@
-# [4.0] Multi-Arm Bandit Problem
+# Multi-Arm Bandit Problem
 In this section of the course we get introduced to the explore-exploit dilemma and the Multi-Arm bandit problem.
 
 #### Explore-Exploit dilemma

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # [4.1] Epsilon-Greedy
+# # Epsilon-Greedy
 # 
 # Epsilon-Greedy is the most important algorithm of this section as the subsequent solutions use epsilon-greedy inherently. While methods like UCB perform better than epsilon-greedy in most cases, the structure of the algorithms remaining mostly the same.
 # 
@@ -24,9 +24,7 @@
 # 
 # Let’s say we have two slots with probability of rewards 0.9 and 0.8 respectively, then by using epsilon-greedy approach our estimated reward becomes:
 # 
-# \begin{equation}
-#     \mathbb{E}(R) = (1-\epsilon)0.9 + \epsilon(\frac{0.8+0.9}{2})
-# \end{equation}
+# $$\mathbb{E}(R) = (1-\epsilon)0.9 + \epsilon(\frac{0.8+0.9}{2})$$
 # 
 # One option to improve this behavior is to have a decaying epsilon over the time.
 # 

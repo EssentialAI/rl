@@ -313,25 +313,3 @@ ax2.set_title("Second-order approximation")
 ax2.legend()
 plt.show()
 
-
-# #### Integration
-# 
-# * Substitution:
-# 
-# $$\int f(ax)dx =\frac{1}{a}\int f(u)du$$
-# 
-# * By part:
-# 
-# $$\int u \enspace dv = uv - \int v \enspace du$$
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
