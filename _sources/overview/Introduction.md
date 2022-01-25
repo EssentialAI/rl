@@ -1,7 +1,7 @@
 <!-- #region -->
 <span class = 'nital'>You can navigate through this page quickly by using the navigation list on the right-hand side of this page.</span>
 
-### [1.0] Introduction
+### Introduction
 
 Let's say you want to build a robot to pickup empty cans in a room. If you follow a rule-based approach, then the robot might follow the following steps:
 1. Localize itself with the room by building a map of the entire room.
@@ -17,7 +17,7 @@ Using Reinforcement Learning, the agent (robot) can learn to collect as many can
 Hold on a second! Before we continue any further, one  must understand what an Agent, Environment, Reward are. The above example explains the robust, adaptive nature of RL. This course teaches Reinforcement Learning from basics. Let's get started.
 ```
 
-#### [1.1] What is Reinforcement Learning?
+#### What is Reinforcement Learning?
 
 <span class = 'hital'>Reinforcement Learning is a field that deals with building models that mimic human behaviour to learn.</span> To completely understand how Reinforcement Learning (RL) models work, let's try and understand how humans learn.
 
@@ -37,7 +37,7 @@ The characteristics of 'Trial-and-Error based search' and 'Delayed Reward' are t
 ```
 <span class = 'nital'>Differences between Machine Learning and Reinforcement Learning are discussed in detail below.</span>
 
-#### [1.2] Why Reinforcement Learning?
+#### Why Reinforcement Learning?
 
 One key feature of reinforcement learning is that it explicitly considers the *whole* problem of a goal-directed agent interacting with an uncertain environment. This is in contrast to many approaches that consider subproblems without addressing how they might fit into a larger picture.
 
@@ -46,7 +46,7 @@ Reinforcement learning is part of a decades-long trend within artificial intelli
 For example, the ability of some reinforcement learning methods to learn with parameterized approximators addresses the classical “curse of dimensionality” in operations research and control theory. More distinctively, reinforcement learning has also interacted strongly with psychology and neuroscience, with substantial benefits going both ways. Of all the forms of machine learning, reinforcement learning is the closest to the kind of learning that humans and other animals do, and many of the core algorithms of reinforcement learning were originally inspired by biological learning systems.
 
 
-#### [1.3] Machine Learning
+#### Machine Learning
 ```{admonition} Note
 :class: idea
 
@@ -61,7 +61,7 @@ The objective of this kind of learning is for the system to extrapolate or gener
 <span class = 'hital'>Unsupervised Machine Learning.</span>
 In this type of Machine Learning, models try to figure out patterns in the data without labels. Unsupervised learning is aimed at finding structures hidden in collections of unlabelled data.
 
-#### [1.4] Is Reinforcement Learning same as Machine Learning?
+#### Is Reinforcement Learning same as Machine Learning?
 
 Although one might be tempted to think of reinforcement learning as a kind of unsupervised learning (because it does not rely on examples of correct behavior), reinforcement learning tries to maximize a reward signal instead of trying to find a hidden structure.
 
