@@ -1,7 +1,7 @@
 <!-- #region -->
 <span class = 'nital'>You can navigate through this page quickly by using the navigation list on the right-hand side of this page.</span>
 
-### Introduction
+### 1. Introduction
 
 Let's say you want to build a robot to pickup empty cans in a room. If you follow a rule-based approach, then the robot might follow the following steps:
 1. Localize itself with the room by building a map of the entire room.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Probability Review
+# # 3. Probability Review
 
 # <span class = 'high'>Introduction to Probability</span>
 # 

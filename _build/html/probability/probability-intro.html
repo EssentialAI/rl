@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Probability Review &#8212; Reinforcement Learning Notes</title>
+    <title>3. Probability Review &#8212; Reinforcement Learning Notes</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -42,7 +42,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe,.cell"
@@ -54,8 +54,8 @@
     <link rel="shortcut icon" href="../_static/brain1.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Multi-Arm Bandit Problem" href="../multi-arm-bandit/mab-explained.html" />
-    <link rel="prev" title="Mathematical Background" href="../math/math-intro.html" />
+    <link rel="next" title="4. Multi-Arm Bandit Problem" href="../multi-arm-bandit/mab-explained.html" />
+    <link rel="prev" title="2. Mathematical Background" href="../math/math-intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -95,44 +95,29 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../index.html">
-   Preface
+   Overview
   </a>
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../overview/table_of_contents.html">
-   Table of Contents
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../overview/structure.html">
-   Structure of this book
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../overview/status.html">
-   Book Status
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../overview/Introduction.html">
-   Introduction
+   1. Introduction
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../math/math-intro.html">
-   Mathematical Background
+   2. Mathematical Background
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Probability Review
+   3. Probability Review
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../multi-arm-bandit/mab-explained.html">
-   Multi-Arm Bandit Problem
+   4. Multi-Arm Bandit Problem
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -142,7 +127,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../multi-arm-bandit/epsilon-greedy.html">
-     Epsilon-Greedy
+     4.1. Epsilon-Greedy
     </a>
    </li>
   </ul>
@@ -193,7 +178,7 @@
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -231,28 +216,18 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+        <div class="d-none d-md-block col-md-2 bd-toc show">
             
         </div>
     </div>
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Probability Review</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                    </div>
-                </div>
-            </div>
-            
+        
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="probability-review">
-<h1>Probability Review<a class="headerlink" href="#probability-review" title="Permalink to this headline">¶</a></h1>
+<h1>3. Probability Review<a class="headerlink" href="#probability-review" title="Permalink to this headline">¶</a></h1>
 <p><span class = 'high'>Introduction to Probability</span></p>
 <p>The language of this course is going to be probability. Everything we discuss in this course will be based on undergraduate level probability. Probability is the study of uncertainty. The mathematical theory of probability is very sophisticated, and delves into a branch of analysis known as measure theory. In these notes, we provide a basic treatment of probability that does not address these finer details.</p>
 </div>
@@ -279,35 +254,37 @@
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
+        
+            <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="../math/math-intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Mathematical Background</p>
+            <p class="prev-next-title">2. Mathematical Background</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../multi-arm-bandit/mab-explained.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Multi-Arm Bandit Problem</p>
+        <p class="prev-next-title">4. Multi-Arm Bandit Problem</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+        
         </div>
     </div>
     <footer class="footer">
-  <p>
-    
-      By Naresh Kumar<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
+    <div class="container">
+      <p>
+        
+          By Naresh Kumar<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
 </main>
 
 
