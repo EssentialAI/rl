@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preface &#8212; Reinforcement Learning Notes</title>
+    <title>Overview &#8212; Reinforcement Learning Notes</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -42,7 +42,9 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe,.cell"
@@ -54,7 +56,7 @@
     <link rel="shortcut icon" href="_static/brain1.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Table of Contents" href="overview/table_of_contents.html" />
+    <link rel="next" title="1. Introduction" href="overview/Introduction.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -94,44 +96,29 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1 current">
   <a class="reference internal" href="#">
-   Preface
+   Overview
   </a>
  </li>
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="overview/table_of_contents.html">
-   Table of Contents
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="overview/structure.html">
-   Structure of this book
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="overview/status.html">
-   Book Status
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="overview/Introduction.html">
-   Introduction
+   1. Introduction
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="math/math-intro.html">
-   Mathematical Background
+   2. Mathematical Background
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="probability/probability-intro.html">
-   Probability Review
+   3. Probability Review
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="multi-arm-bandit/mab-explained.html">
-   Multi-Arm Bandit Problem
+   4. Multi-Arm Bandit Problem
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -141,7 +128,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="multi-arm-bandit/epsilon-greedy.html">
-     Epsilon-Greedy
+     4.1. Epsilon-Greedy
     </a>
    </li>
   </ul>
@@ -192,7 +179,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -210,7 +197,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+        <div class="d-none d-md-block col-md-2 bd-toc show">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -219,11 +206,6 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Preface
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
    Overview
   </a>
  </li>
@@ -233,8 +215,18 @@
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#acknowledgements">
-   Acknowledgements
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of Contents
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#book-status">
+   Book Status
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
   </a>
  </li>
 </ul>
@@ -245,53 +237,12 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Preface</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Preface
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#objective">
-   Objective
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#acknowledgements">
-   Acknowledgements
-  </a>
- </li>
-</ul>
-
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            
+        
               <div>
                 
-  <div class="section" id="preface">
-<h1>Preface<a class="headerlink" href="#preface" title="Permalink to this headline">¶</a></h1>
-<p>This book is written with the aim of consolidating reference material for Reinforcement Learning from multiple books and course videos. <span class='nital'>The topics of this book become progressively more complex and mathematically intensive.</span></p>
-</div>
-<div class="section" id="overview">
+  <div class="section" id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<p>This book is written with the aim of consolidating reference material for Reinforcement Learning from multiple books and course videos. <span class='nital'>The topics of this book become progressively more complex and mathematically intensive.</span></p>
 <p><span class = 'high'>Reinforcement Learning (RL) tries to mimic human behaviour of ‘learning through experience.’</span> RL attempts to copy the process of learning strategies by interacting with environment. RL is exciting because it is possible to learn long-term strategies and apply them to complex industrial problems. This is due to the fact that Machine Learning is not intrinsively designed to solve sequential decision making, and RL attempts to solve this problem by learning to maximize optimal reward through trail and error.</p>
 </div>
 <div class="section" id="objective">
@@ -305,10 +256,35 @@
 </div>
 <p>I have tried to write the entire code in this book from scratch. While many students are enthralled by the applications of RL, very few resources are available to actually comprehend the intricate <strong>mathematics</strong> behind RL. Through this book, I aim to teach Reinforcement Learning from the ground-up so that readers can appreciate it’s (RL’s) true potential from a <span class='high'>mathematical perspective while extending their learnings to industrial applications.</span></p>
 </div>
-<div class="section" id="acknowledgements">
-<h1>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h1>
-<p>Thanks to Jupyter-book for making such a beautiful project that allowed me to write this book.<br>
-<a class="reference external" href="https://www.udemy.com/course/artificial-intelligence-reinforcement-learning-in-python/">[1] Artificial Intelligence: Reinforcement Learning in Python</a><br>
+<div class="section" id="table-of-contents">
+<h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="#"><span class="doc std std-doc">Overview</span></a></p></li>
+<li><p><a class="reference internal" href="overview/Introduction.html"><span class="doc std std-doc">1. Reinforcement Learning Introduction</span></a></p></li>
+<li><p><a class="reference internal" href="math/math-intro.html"><span class="doc std std-doc">2. Mathematical Background</span></a></p></li>
+<li><p><a class="reference internal" href="probability/probability-intro.html"><span class="doc std std-doc">3. Probability Warmup</span></a></p></li>
+<li><p><a class="reference internal" href="multi-arm-bandit/mab-explained.html"><span class="doc std std-doc">4. Multi-Arm Bandit Problem</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="multi-arm-bandit/epsilon-greedy.html"><span class="doc std std-doc">4.1 Epsilon-Greedy Method</span></a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="book-status">
+<h1>Book Status<a class="headerlink" href="#book-status" title="Permalink to this headline">¶</a></h1>
+<p>✔️ Get Live coding to work<br>
+✔️ Get Binder to work<br>
+⌛<span class="math notranslate nohighlight">\(\enspace\)</span>Mathematical Background chapter<br>
+⌛<span class="math notranslate nohighlight">\(\enspace\)</span>Modify Probability review into chapter<br>
+🛑 <code class="docutils literal notranslate"><span class="pre">To-Do</span></code> Complete Probability review<br>
+🛑 <code class="docutils literal notranslate"><span class="pre">To-Do</span></code> Inline tabs for different programming languages (Python, R)<br>
+🛑 <code class="docutils literal notranslate"><span class="pre">To-Do</span></code> Decide Sphinx theme<br>
+🛑 <code class="docutils literal notranslate"><span class="pre">To-Do</span></code> Decide Structure of the book<br>
+🛑 <code class="docutils literal notranslate"><span class="pre">To-Do</span></code> Complete Multi-Arm bandit chapter<br></p>
+</div>
+<div class="section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://www.udemy.com/course/artificial-intelligence-reinforcement-learning-in-python/">[1] Artificial Intelligence: Reinforcement Learning in Python</a><br>
 <a class="reference external" href="https://www.coursera.org/specializations/reinforcement-learning">[2] Reinforcement Learning Specialization from Coursera</a><br>
 <a class="reference external" href="https://rl-book.com/">[3] Reinforcement Learning Industrial Applications with Intelligent Agents</a><br>
 <a class="reference external" href="http://www.incompleteideas.net/book/the-book-2nd.html">[4] Reinforcement Learning An Introduction</a><br></p>
@@ -338,28 +314,30 @@
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
+        
+            <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="overview/table_of_contents.html" title="next page">
+    <a class='right-next' id="next-link" href="overview/Introduction.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Table of Contents</p>
+        <p class="prev-next-title">1. Introduction</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+        
         </div>
     </div>
     <footer class="footer">
-  <p>
-    
-      By Naresh Kumar<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
+    <div class="container">
+      <p>
+        
+          By Naresh Kumar<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
 </main>
 
 
