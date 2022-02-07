@@ -3,6 +3,7 @@ root: index
 chapters:
   - file: overview/Introduction
   - file: math/math-intro
+  - file: math/linear-algebra
   - file: probability/probability-intro
   - file: multi-arm-bandit/mab-explained
     sections:

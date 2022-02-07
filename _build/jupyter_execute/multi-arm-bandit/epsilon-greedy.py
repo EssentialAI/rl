@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # 4.1. Epsilon-Greedy
+# # 5.1. Epsilon-Greedy
 # 
 # Epsilon-Greedy is the most important algorithm of this section as the subsequent solutions use epsilon-greedy inherently. While methods like UCB perform better than epsilon-greedy in most cases, the structure of the algorithms remaining mostly the same.
 # 
